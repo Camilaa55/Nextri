@@ -1,0 +1,86 @@
+/* Paleta de verdes */
+:root {
+    --green-dark: #0a3d2e;
+    --green: #0f7a52;
+    --green-light: #26a17b;
+    --mint: #dff7ec;
+    --white: #ffffff;
+    --text-dark: #06291e;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, var(--mint), #f6fffb);
+    padding: 25px;
+    color: var(--text-dark);
+}
+
+/* Título */
+.titulo {
+    font-size: 28px;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+/* Saldo */
+.saldo {
+    font-size: 20px;
+    color: var(--green);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Tabela */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 60, 40, 0.15);
+}
+
+/* Cabeçalho */
+.tabela thead th {
+    background: var(--green);
+    color: var(--white);
+    padding: 12px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Linhas */
+.tabela tbody td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e7f7ef;
+    font-size: 15px;
+}
+
+/* Listras alternadas */
+.tabela tbody tr:nth-child(even) {
+    background: #f3fff9;
+}
+
+/* Hover */
+.tabela tbody tr:hover {
+    background: var(--mint);
+    transition: 0.2s;
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--green-dark);
+    font-size: 14px;
+}

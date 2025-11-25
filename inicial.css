@@ -1,0 +1,116 @@
+/* ======= RESET ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #e8f5e9; /* verde bem claro */
+    color: #1b5e20; /* verde escuro */
+    padding: 20px;
+}
+
+/* ======= CONTAINER ======= */
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+/* ======= MENU SUPERIOR ======= */
+h2.NEXTRI {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2e7d32; /* verde */
+}
+
+.topico {
+    display: block;
+    padding: 10px;
+    margin: 6px 0;
+    text-decoration: none;
+    background: #91be92;
+    color: #1b5e20;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.topico:hover {
+    background: #91be92;
+}
+
+/* ======= NOME DO USUÁRIO ======= */
+.nome {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.usuario {
+    background: #114b13;
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: #91be92;
+}
+
+/* ======= CAMPO DE SALDO ======= */
+fieldset.saldo {
+    border: 2px solid #19701d;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #91be92;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #19701d;
+    border-radius: 8px;
+}
+
+/* ======= BOTÕES ======= */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #19701d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2e7d32;
+}
+
+/* ======= OFERTAS ======= */
+h1.nome {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn-oferta {
+    background: #c8e6c9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #91be92;
+}
+

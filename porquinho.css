@@ -1,0 +1,135 @@
+/* Paleta sólida */
+:root {
+  --green-1: #041e17;   /* fundo */
+  --green-2: #073328;   /* caixa */
+  --green-3: #0b523e;   /* botões */
+  --green-4: #0f6d4d;   /* hover */
+  --green-light: #b4f2d4;
+  --text-light: #eafff4;
+  --radius: 12px;
+  --font: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--green-1);
+  font-family: var(--font);
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CONTAINER CENTRAL — agora tudo em COLUNA */
+.main-box {
+  background: var(--green-2);
+  padding: 35px;
+  width: 500px;
+  border-radius: var(--radius);
+  box-shadow: 0 0 20px rgba(0,0,0,0.45);
+
+  display: flex;
+  flex-direction: column;   /* empilha tudo */
+  align-items: center;      /* centraliza */
+  text-align: center;       /* texto central */
+  gap: 18px;                /* espaçamento entre itens */
+}
+
+.titulo {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+/* Porquinho */
+.porco {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 4px solid var(--green-light);
+}
+
+/* Valores */
+.dinheiro,
+.renda {
+  background: var(--green-3);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Label */
+.guardar1 {
+  font-weight: bold;
+}
+
+/* Input */
+input[type="number"] {
+  width: 220px;
+  padding: 10px;
+  border-radius: var(--radius);
+  border: 2px solid var(--green-light);
+  background: var(--green-1);
+  color: var(--text-light);
+  font-size: 16px;
+  outline: none;
+}
+input[type="number"]:focus {
+  border-color: var(--green-4);
+}
+
+/* Botão ADD */
+.guardar {
+  padding: 10px 25px;
+  background: var(--green-3);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+.guardar:hover {
+  background: var(--green-4);
+}
+
+/* Botão principal */
+.botao {
+  padding: 10px 22px;
+  background: none;
+  border: 2px solid var(--green-light);
+  border-radius: var(--radius);
+  color: var(--green-light);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+.botao:hover {
+  background: var(--green-3);
+  border-color: var(--green-3);
+  color: white;
+}
+
+/* Texto */
+.texto {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 5px;
+  color: var(--text-light);
+}
+
+/* Link voltar */
+.voltar {
+  color: var(--green-light);
+  text-decoration: none;
+  font-weight: bold;
+}
+.voltar:hover {
+  color: white;
+}
+

@@ -1,0 +1,151 @@
+/* styles.css - Paleta verde */
+:root{
+  --green-dark: #0b3d2e;    /* muito escuro */
+  --green:      #0f7a52;    /* principal */
+  --green-mid:  #26a17b;    /* secundário */
+  --mint:       #bff3df;    /* claro / fundo */
+  --soft:       #eaf9f0;    /* quase branco com verde */
+  --accent:     #1b6b48;    /* destaque */
+  --text:       #093425;    /* texto escuro */
+}
+
+/* Reset e base */
+*{box-sizing:border-box}
+html,body{
+  height:100%;
+  margin:0;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, var(--mint) 0%, var(--soft) 100%);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* Conteúdo principal (centralizado) */
+.main{
+  max-width:980px;
+  margin:40px auto;
+  padding:28px;
+  background: rgba(255,255,255,0.6);
+  border-radius:14px;
+  box-shadow: 0 8px 30px rgba(6,38,28,0.12);
+  border: 1px solid rgba(6,38,28,0.06);
+}
+
+/* Cabeçalhos */
+h1{
+  font-size:1.9rem;
+  margin:0 0 6px;
+  color: var(--green-dark);
+  letter-spacing:0.6px;
+}
+h2{
+  font-size:1.4rem;
+  margin:10px 0 8px;
+  color: var(--green);
+}
+h3{
+  font-size:1.05rem;
+  margin:6px 0;
+  color: var(--accent);
+  font-weight:600;
+}
+
+/* Lista estilo cartão (ul/ol) */
+ul.cards, ol.cards{
+  list-style:none;
+  padding:0;
+  margin:16px 0 0;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:14px;
+}
+ul.cards li, ol.cards li{
+  background: linear-gradient(180deg, rgba(38,161,123,0.06), rgba(255,255,255,0.5));
+  border:1px solid rgba(15,122,82,0.12);
+  padding:14px;
+  border-radius:10px;
+  box-shadow: 0 4px 14px rgba(7,45,34,0.06);
+}
+
+/* Imagem dentro do cartão */
+.card-img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  border-radius:8px;
+  margin-bottom:10px;
+  border: 1px solid rgba(6,38,28,0.05);
+}
+
+/* Links e botões */
+a{
+  color: var(--green-dark);
+  text-decoration:none;
+  transition: all .18s ease;
+}
+a:hover{ color: var(--green-mid); transform: translateY(-1px); }
+
+.button, button{
+  display:inline-block;
+  background: var(--green);
+  color: #fff;
+  padding:10px 14px;
+  border-radius:8px;
+  border: none;
+  cursor:pointer;
+  font-weight:600;
+  box-shadow: 0 6px 18px rgba(15,122,82,0.12);
+}
+.button.ghost{
+  background: transparent;
+  color: var(--green-dark);
+  border:1px solid rgba(15,122,82,0.14);
+}
+
+/* Preço / destaque */
+.price{
+  font-size:1.25rem;
+  font-weight:700;
+  color: var(--green-dark);
+}
+
+/* Back link (ex.: voltar) */
+.back-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color: var(--accent);
+  font-weight:600;
+}
+
+/* Container lateral vertical fixo (opcional) */
+.side-container{
+  position:fixed;
+  left:10px;
+  top:50%;
+  transform: translateY(-50%);
+  width:72px;
+  padding:10px;
+  background: linear-gradient(180deg, rgba(18,93,70,0.95), rgba(15,122,82,0.95));
+  color:#fff;
+  border-radius:12px;
+  box-shadow: 0 8px 30px rgba(6,38,28,0.18);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:center;
+  z-index:999;
+}
+.side-container a{
+  color:#fff;
+  font-size:0.85rem;
+  text-align:center;
+}
+
+/* Responsividade */
+@media (max-width:720px){
+  .main{ margin:18px; padding:18px; border-radius:10px; }
+  .side-container{ display:none; } /* escondemos em telas pequenas */
+}
