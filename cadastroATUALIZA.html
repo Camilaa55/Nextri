@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastroatuali.css">
+</head>
+<body>
+    <main class="cadastro-container">
+         <form action="cadastro-card">
+
+            <h1 class="Logo"> Nextri </h1>
+            <p class="subtitle"> Atualização de Cadastro</p>
+
+             <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Nome e Sobrenome" required>
+            </div>
+
+            <hr>
+
+             <div class="input-group">
+               <label for="cpf_formatado">CPF (formatado):</label>
+               <input type="text" id="cpf_formatado" name="cpf_formatado" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" placeholder="Ex: 000.000.000-00"required>
+            </div>
+
+            <hr>
+
+             <div class="input-group">
+                <label for="telefone">Número de Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2} [0-9]{4,5}-[0-9]{4}" placeholder="Ex: 12 xxxxx-xxxx" required> 
+               <!-- pattern="[0-9]{2} [0-9]{4,5}-[0-9]{4}" define um padrão simples para números de telefone brasileiros (código de área com 2 dígitos, 
+                espaço, 4 ou 5 dígitos, hífen e 4 dígitos finais). -->
+            </div>
+
+            <hr>
+
+            <div class="input-group">
+                <label for="Endereço">Endereço</label>
+                <input type="text" id="Endereço" placeholder="Rua x, Bairro y, n°0" required>
+            </div>
+
+            <hr>
+
+
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="emai" placeholder="seuemail@dominio.com" required>
+            </div>
+  
+            <hr>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Senha(6 caracteres)" maxlength="6" minlength="6" >
+            </div>
+
+            <hr>
+
+            <a href="/inicial.html" class="btn-primary">Cadastrar</a>
+
+            <a href="/atualizecadas.html" class="btn-primary">Cancelar</a>
+
+            <footer>
+             © 2025 Banco Nextri - Atualização do Cadastro
+            </footer>
+
+</body>
+</html>

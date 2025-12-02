@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Bancários</title>
+
+    <link rel="stylesheet" href="dadosbanca.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Dados PIX</h2>
+
+    <div class="section">
+        <div class="label">Chave PIX</div>
+        <div class="value-box">
+            <span>78a9c1b2-xxxx-xxxx-xxxx-93f1e3a8</span>
+            <button>Copiar</button>
+        </div>
+    </div>
+
+    
+    <div class="section qr-box">
+        <div class="label">QR Code para receber pagamento</div>
+        <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=PIX_EXEMPLO" alt="QR Code">
+    </div>
+
+   
+    <div class="section">
+        <div class="label">Código Pix (copie e cole)</div>
+        <div class="value-box">
+            <span id="pixCode">00020126580014BR.GOV.BCB.PIX0136codigo-de-exemplo...</span>
+            <button> Copiar</button>
+        </div>
+    </div>
+
+    
+    <button class="share-btn">Compartilhar dados PIX</button>
+</div>
+
+<h3>Deseja acessar os dados da sua conta?</h3>
+<br>
+ <a href="/senhaepriv.html" class="btn-primary">Privacidade</a>
+ 
+ <footer>
+    © 2025 Banco Nextri - Dados Bancários
+</footer>
+
+</body>
+</html>

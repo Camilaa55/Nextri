@@ -1,0 +1,129 @@
+/* styleconta.css */
+
+/* 1. Reset básico e fontes modernas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8f5; /* Fundo verde-claro suave */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. O "Cartão" principal que envolve a central de ajuda */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 500px; /* Um pouco mais largo para acomodar o conteúdo */
+    margin-bottom: 20px;
+    text-align: left; /* Alinha o texto à esquerda dentro do cartão */
+}
+
+/* 3. Títulos e Header */
+header h1 {
+    color: #1e7e34; /* Verde escuro e profissional */
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center; /* Centraliza o título principal */
+}
+
+h2 {
+    color: #28a745; /* O verde primário para os subtítulos */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+/* 4. Campo de Busca */
+.box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 25px; /* Cantos arredondados para um visual de busca moderno */
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.box input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+/* 5. Categorias */
+.category {
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+.btn {
+    display: inline-block; /* Mantém os links na mesma linha, mas com espaço */
+    padding: 8px 15px;
+    background-color: #6abe6f; /* Botão cinza claro para links secundários */
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #dee2e6;
+}
+
+/* 6. Questões Recorrentes (FAQ) */
+.popular {
+    list-style: none;
+}
+
+.popular li {
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 15px;
+}
+
+.popular p {
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* 7. Fale Conosco (Botões) */
+.contact button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #28a745; /* Botões verdes principais */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #218838;
+}
+
+/* 8. Rodapé */
+footer {
+    bottom: 20px;
+    font-size: 0.8em;
+    color: #999;
+}

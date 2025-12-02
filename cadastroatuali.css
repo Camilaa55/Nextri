@@ -1,0 +1,123 @@
+/* styleconta.css */
+
+/* 1. Reset básico e fontes modernas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8f5; /* Fundo verde-claro suave */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. O "Cartão" principal que envolve o formulário */
+.cadastro-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+/* 3. Estilo do Logo e Subtítulo */
+.Logo {
+    color: #1e7e34; /* Um verde escuro e profissional */
+    margin-bottom: 5px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #28a745;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+/* 4. Grupos de Input (Label e Input) */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block; /* Garante que o label fique acima do input */
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4a4a4a;
+    font-size: 0.9em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #28a745; /* Borda verde quando focado */
+    outline: none;
+}
+
+/* Linha horizontal */
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* 5. Botões de Ação */
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #28a745; /* O verde principal */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+/* Estilo específico para o botão Cancelar (ação secundária) */
+/* nth-child(2) seleciona o segundo link 'a' na página */
+.cadastro-container a:nth-child(2) {
+    background-color: #6c757d; /* Cor cinza/neutra */
+    box-shadow: none;
+}
+
+.cadastro-container a:nth-child(2):hover {
+    background-color: #5a6268;
+    transform: translateY(0);
+}
+
+/* 6. Rodapé */
+footer {
+    margin-top: auto;
+    font-size: 0.8em;
+    color: #999;
+    padding-top: 20px;
+    /* Se você quiser o footer absoluto no final da tela, use: */
+    /* position: absolute; bottom: 20px; */
+}

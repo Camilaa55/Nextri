@@ -1,0 +1,149 @@
+/* styleconta.css */
+
+/* 1. Reset básico e fontes modernas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8f5; /* Fundo verde-claro suave */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. O "Cartão" principal que envolve o conteúdo */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+    text-align: left; /* Alinha o texto à esquerda dentro do cartão */
+}
+
+/* 3. Títulos */
+h2 {
+    color: #1e7e34; /* Um verde escuro e profissional */
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    color: #28a745;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+/* 4. Estilo das Seções de Dados */
+.section {
+    margin-bottom: 25px;
+}
+
+.label {
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+/* 5. Caixas de Valor (Chave e Código PIX) */
+.value-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    word-break: break-all; /* Garante que o texto longo quebre a linha */
+}
+
+.value-box span {
+    font-family: monospace; /* Fonte monoespaçada para códigos */
+    font-size: 0.9em;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+.value-box button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.value-box button:hover {
+    background-color: #218838;
+}
+
+/* 6. QR Code Box */
+.qr-box {
+    text-align: center; /* Centraliza a imagem dentro da div */
+}
+
+.qr {
+    border: 5px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* 7. Botão de Compartilhar */
+.share-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(40, 167, 69, 0.25);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.share-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* 8. Botão de Privacidade (fora do container principal) */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d; /* Cinza para ação secundária */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5a6268;
+}
+
+/* 9. Rodapé */
+footer {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 40px;
+}
